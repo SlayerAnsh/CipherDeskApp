@@ -1,0 +1,14 @@
+{
+  "name": "application",
+  "version": "1.0.0",
+  "description": "Application for encrypting/decrypting",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Anshudhar",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^9.1.2"
+  }
+}
