@@ -1,12 +1,3 @@
-/*
-====================
-ABOUT THIS SOLUTION
-====================
-Ceasar Cipher Also known as the ​ shift cipher​ , ​ it is a type of encryption technique in which each letter in
-the plaintext is replaced by a letter some fixed number of positions down the alphabet.
-For example, for a shift number of 3, D would be replaced by A and E would be B. For
-further information, visit ​ link​ .
-*/
 
 // Application controller
 const {writeFile, write, readFile, read} = require('fs');
