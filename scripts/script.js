@@ -35,9 +35,8 @@ app.ceaserCipher = () => {
   let encryptBtn = document.getElementById('encrypt'),
       decryptBtn = document.getElementById('decrypt');
 
-  let ecommand = 'encrypt';
-  let dcommand = 'decrypt';
-  let directory = 'cd build';
+  let ecommand = './encrypt';
+  let dcommand = './decrypt';
   
 //   Trigger the encryption process once the button is clicked
   encryptBtn.addEventListener('click', (e) => {
@@ -47,10 +46,13 @@ app.ceaserCipher = () => {
         if(err) throw err;
         console.log('message created')
       });
+      console.log(ecommand);
       exec(ecommand, (err, stdout, stderr) => {
         if(err !== null) {
             console.log('exec error: ' + err)
         }
+        console.log(stdout);
+
         readFile('message.txt', (err, text) => {
         if(err) throw err;
         result.textContent = "Encrypted: " + text;
